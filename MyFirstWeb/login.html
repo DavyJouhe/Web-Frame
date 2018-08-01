@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if !IE]><!-->
+<html>
+    <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+        <meta content="" name="description" />
+        <meta content="" name="author" />
+        <title>登录页面</title>
+
+        <!-- ================== BEGIN PAGE LEVEL STYLE ================== -->
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/login.css" />
+        <!-- ================== END PAGE LEVEL STYLE ================== -->
+
+        <!--====================== BEGIN Common JS =========================-->
+        <script type="text/javascript" src="js/html5.js"></script>
+        <script type="text/javascript" src="plugin/jquery-1.11.3/jquery.min.js"></script>
+        <!--====================== END Common JS ===========================-->
+    </head>
+    <body>
+        <div class="top"></div>
+        <div class="title"> 中 文 的 名 字 系 统 </div>
+        <div class="titleEng">This Place Put English Name System</div>
+        <div class="leftpic"></div>
+        <div class="rightpic">
+            <div class= "form">
+                <div class="logintitle">用户登录</div>
+                <p class="warntext">
+                    <label id="lblStatus"></label>
+                </p>
+                <p class="userName">
+                    <label class="userPic"></label>
+                    <input type="text" id="user"  class="inputBox" placeholder="请输入用户名"/>
+                </p>
+                <p class="password">
+                    <label class="pwdPic"></label>
+                    <input type="password" id="pwd" class="inputBox" placeholder="请输入密码"/>
+                </p>
+                <p class="logselect">
+                    <input type="checkbox" id="remember" class="rem" />
+                    <label style="color: #2983CF; margin-right:160px;"> 记住用户名</label>
+                    <a>忘记密码？</a>
+                </p>
+                    <button type="submit" id="loginBtn">登录</button>
+            </div>
+        </div>        
+       <div class="footer">Powered by company</div>
+    </body>
+</html>
