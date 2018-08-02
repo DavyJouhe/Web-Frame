@@ -1,7 +1,7 @@
 /* 
 * @Author: Jouhe
 * @Date:   2018-08-02 16:53:44
-* @Last Modified time: 2018-08-02 16:54:40
+* @Last Modified time: 2018-08-02 21:23:30
 */
 
 /*homepage*/
@@ -26,3 +26,10 @@
 .uimakerinfo{padding-left:40px; background:url(../img/search.png) no-repeat 10px 15px; padding-top:15px; padding-bottom:20px;}
 .umlist{padding-left:40px;}
 .umlist li{float:left; background:url(../img/ulist.png) no-repeat 0 5px; padding-left:10px; margin-right:15px;}
+
+
+/*googleBrower*/
+.brower h1{font-size: 35px;text-align:center;margin-top: 50px;}
+.brower h2{text-align:center;margin-top: 10px; font-size:28px;}
+.browerLogo{width:300px; height:300px; margin:20px auto;cursor:pointer;cursor: hand;display: block;}
+.download{text-decoration: none; border-bottom: 1px solid #3186c8;cursor:pointer;cursor: hand;color:#3186c8; }
