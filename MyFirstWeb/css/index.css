@@ -48,26 +48,25 @@ h1{ float:left; margin:7px 0 0 20px; width:64px; height:64px; background:url(../
 .sidebar .nav>li{ line-height:40px; border-bottom:1px solid #dbe9f1; cursor:pointer;}
 .sidebar .nav>li.current .nav-header{ background:#6ec673;   border-color:#72b877;}
 .sidebar .nav>li.current .nav-header span{color:#fff;}
-.sidebar .nav>li .nav-header{ padding-right:14px;}
-.sidebar .nav>li .nav-header a{ display:block; margin-left:8px; padding-left:32px; color:#000; font-size:13px;}
-.sidebar .nav>li .nav-header a span{ float:left;}
-.sidebar .nav>li .nav-header a i{ float:right; width:12px; height:40px; background:url(../img/index/leftjt01.png) no-repeat center center;}
+.nav-header{ padding-right:14px;}
+.nav-header a{ display:block; margin-left:8px; padding-left:32px; color:#000; font-size:13px;}
+.nav-header a span{ float:left;}
+.nav-header a i{ float:right; width:12px; height:40px; background:url(../img/index/leftjt01.png) no-repeat center center;}
 .sidebar .nav>li.current .nav-header a i{  background:url(../img/index/leftjt03.png) no-repeat center center;}
 .sidebar .nav>li.current.hasChild .nav-header a i{  background:url(../img/index/leftjt02.png) no-repeat center center;}
-.sidebar .nav>li.gongwen .nav-header a{ background:url(../img/index/泵站系统.png) no-repeat left center;}
-.sidebar .nav>li.nav-info .nav-header a{ background:url(../img/index/管线编辑.png) no-repeat left center;}
-.sidebar .nav>li.konwledge .nav-header a{ background:url(../img/index/污水处理系统.png) no-repeat left center;}
-.sidebar .nav>li.agency .nav-header a{ background:url(../img/index/节点系统.png) no-repeat left center;}
-.sidebar .nav>li.email .nav-header a{ background:url(../img/index/ico05.png) no-repeat left center;}
-.sidebar .nav>li.system .nav-header a{ background:url(../img/index/管理系统.png) no-repeat left center;}
-.sidebar .nav>li.editor .nav-header a{ background:url(../img/index/ico02.png) no-repeat left center;}
+.sidebar .nav>li.first .nav-header a{ background:url(../img/index/first.png) no-repeat left center;}
+.sidebar .nav>li.second .nav-header a{ background:url(../img/index/second.png) no-repeat left center;}
+.sidebar .nav>li.third .nav-header a{ background:url(../img/index/third.png) no-repeat left center;}
+.sidebar .nav>li.fourth .nav-header a{ background:url(../img/index/fourth.png) no-repeat left center;}
+.sidebar .nav>li.fifth .nav-header a{ background:url(../img/index/fifth.png) no-repeat left center;}
+.sidebar .nav>li.sixth .nav-header a{ background:url(../img/index/sixth.png) no-repeat left center;}
 
 /*child-sidebar*/
-.sidebar .nav>li .subnav{ display:none; padding:6px 0 11px 0;}
+.subnav{ display:none; padding:6px 0 11px 0;}
 .sidebar .nav>li.current .subnav{ display:none;}
 .sidebar .nav>li.current.hasChild .subnav{ display:block;}
-.sidebar .nav>li .subnav li{ line-height:28px; margin-left:40px; padding-left:10px; background:url(../img/index/leftjt04.png) no-repeat left center;}
-.sidebar .nav>li .subnav li a{ color:#000; font-size:12px;}
+.subnav li{ line-height:28px; margin-left:40px; padding-left:10px; background:url(../img/index/leftjt04.png) no-repeat left center;}
+.subnav li a{ color:#000; font-size:12px;}
 
 /*content*/
 .content{overflow:auto; padding-left:6px;}

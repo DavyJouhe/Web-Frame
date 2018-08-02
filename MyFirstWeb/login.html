@@ -19,6 +19,7 @@
         <!--====================== BEGIN Common JS =========================-->
         <script type="text/javascript" src="js/html5.js"></script>
         <script type="text/javascript" src="plugin/jquery-1.11.3/jquery.min.js"></script>
+        <script type="text/javascript" src="js/login.js"></script>
         <!--====================== END Common JS ===========================-->
     </head>
     <body>
@@ -34,15 +35,15 @@
                 </p>
                 <p class="userName">
                     <label class="userPic"></label>
-                    <input type="text" id="user"  class="inputBox" placeholder="请输入用户名"/>
+                    <input type="text" id="user"  class="inputBox" autocomplete="off" placeholder="请输入用户名"/>
                 </p>
                 <p class="password">
                     <label class="pwdPic"></label>
-                    <input type="password" id="pwd" class="inputBox" placeholder="请输入密码"/>
+                    <input type="password" id="pwd" class="inputBox" autocomplete="off" placeholder="请输入密码"/>
                 </p>
                 <p class="logselect">
-                    <input type="checkbox" id="remember" class="rem" />
-                    <label style="color: #2983CF; margin-right:160px;"> 记住用户名</label>
+                    <input type="checkbox" id="memory" class="mery" />
+                    <label style="color: #2983CF; margin-right:160px;"> 记住密码</label>
                     <a>忘记密码？</a>
                 </p>
                     <button type="submit" id="loginBtn">登录</button>
