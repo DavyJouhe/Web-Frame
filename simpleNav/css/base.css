@@ -1,7 +1,7 @@
 /* 
 * @Author: Jouhe
 * @Date:   2018-07-31 14:46:08
-* @Last Modified time: 2018-07-31 15:22:58
+* @Last Modified time: 2018-08-03 16:29:57
 */
 
 @charset "utf-8";
@@ -15,7 +15,7 @@ ul,li,h1,h2,h3,h4,h5,h6,dl,dt,dd,img,form,p,input{margin:0px;padding:0px;list-st
 a,button,input,div{-webkit-tap-highlight-color:rgba(0,0,0,0); -webkit-tap-highlight-color: transparent; outline: 0 none;}
 input[type="checkbox"], input[type="radio"],input[type="file"]{ box-sizing: border-box; padding: 0; cursor:pointer;cursor: hand; vertical-align: middle;}
 input[type="button"]{cursor:pointer;cursor: hand;}
-/*input[type="checkbox"],input[type="radio"]{-webkit-appearance: none; -moz-appearance: none;}*/
+input[type="checkbox"],input[type="radio"]{-webkit-appearance: none; -moz-appearance: none;}
 input[type="file"]{-webkit-appearance: none; -moz-appearance: none; cursor:pointer;cursor: hand;} 
 input::-webkit-input-placeholder { color:#969696; } 
 input:-moz-placeholder { color:#969696; }
@@ -75,6 +75,20 @@ a {color: #000; text-decoration: none; cursor:pointer; cursor: hand}
 .pl20{padding-left:20px;}
 .pr20{padding-right:20px;}
 
+/*---内留白25px---*/
+.p25{padding:25px;}
+.pt25{padding-top:25px;}
+.pb25{padding-bottom:25px;}
+.pl25{padding-left:25px;}
+.pr25{padding-right:25px;}
+
+/*---内留白30px---*/
+.p30{padding:30px;}
+.pt30{padding-top:30px;}
+.pb30{padding-bottom:30px;}
+.pl30{padding-left:30px;}
+.pr30{padding-right:30px;}
+
 /*---外留白5px---*/
 .m5{ margin:5px;}
 .mt5{ margin-top:5px;}
@@ -89,16 +103,30 @@ a {color: #000; text-decoration: none; cursor:pointer; cursor: hand}
 .ml10{ margin-left:10px;}
 .mr10{ margin-right:10px;}
 
-/*---外留白10px---*/
+/*---外留白15px---*/
 .m15{ margin:10px;}
 .mt15{ margin-top:10px;}
 .mb15{ margin-bottom:10px;}
 .ml15{ margin-left:10px;}
 .mr15{ margin-right:10px;}
 
-/*---外留白10px---*/
+/*---外留白20px---*/
 .m20{margin:20px;}
 .mt20{ margin-top:20px;}
 .mb20{ margin-bottom:20px;}
 .ml20{ margin-left:20px;}
 .mr20{ margin-right:20px;}
+
+/*---外留白25px---*/
+.m25{margin:25px;}
+.mt25{ margin-top:25px;}
+.mb25{ margin-bottom:25px;}
+.ml25{ margin-left:25px;}
+.mr25{ margin-right:25px;}
+
+/*---外留白30px---*/
+.m30{margin:30px;}
+.mt30{ margin-top:30px;}
+.mb30{ margin-bottom:30px;}
+.ml30{ margin-left:30px;}
+.mr30{ margin-right:30px;}

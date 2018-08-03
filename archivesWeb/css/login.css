@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+    background: url(../img/login/login_bg.png) no-repeat 0px 0px;
+	font-family: 'Open Sans', sans-serif;
+	background-size:cover;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	min-height:960px;
+    overflow: hidden;
+}
+
+/*header*/
+.header{width:730px;height:66px;background:url(../img/login/login_logo.png) no-repeat; margin:4% auto 1%}
+
+/*login_box*/
+.login_box{width:960px;height:461px;margin:0 auto;background: url(../img/login/login_pic.png) no-repeat;position: relative;}
+.login_content {position: absolute;right:70px;top:60px;width:398px;}
+.login_title{text-align:center;letter-spacing:5px;color:#2380ee;font-size: 30px;margin-bottom:40px;}
+.login_inputed span, .login_input span{float: left;width:22px;height:22px;margin-left:20px;vertical-align: middle;margin-top:15px;}
+.login_inputed input,.login_input input{margin-left:20px;vertical-align: middle;}
+.login_inputed .user,.login_input .user{background: url(../img/login/login_icon_user.png) no-repeat; }
+.login_inputed .pwd, .login_input .pwd{background: url(../img/login/login_icon_password.png) no-repeat; }
+.rember input[type="checkbox"]{-webkit-appearance:none;appearance:none;-moz-appearance:none;}
+.mery{display: inline-block;vertical-align: middle;color:#333;font-size: 14px;}
+input[type="checkbox"]{background:url(../img/index/btn_xuanze.png) no-repeat; vertical-align: middle;margin-right:10px;width:20px; height:20px;}
+input[type="radio"]{background:url(../img/index/btn_radio.png) no-repeat; vertical-align: middle;margin-right:10px;width:20px; height:20px;}
+.rember input[type="checkbox"]:checked{background: url(../img/login/login_selectionboxed.png) no-repeat; vertical-align: middle;margin-right:10px;width:16px; height:16px;}
+input[type="radio"]:checked{background: url(../img/index/btn_radioed.png) no-repeat; vertical-align: middle;margin-right:10px;width:20px; height:20px;}
+input[type="checkbox"]:checked{background: url(../img/index/btn_xuanzed.png) no-repeat; vertical-align: middle;margin-right:10px;width:20px; height:20px;}
+.checkBox{background: url(../img/login/login_selectionbox.png) no-repeat; vertical-align: middle;margin-right:10px;width:16px; height:16px;}
+.login_input{overflow: hidden;background: url(../img/login/login_inputbox.png) no-repeat;height:50px; line-height: 50px;margin-top:35px;}
+.login_inputed{overflow: hidden;background: url(../img/login/login_inputboxed.png) no-repeat;height:50px; line-height: 50px;margin-top:35px;}
+.login_btn:hover{background: url(../img/login/login_btn_logined.png) no-repeat;}
+.login_btn{background: url(../img/login/login_btn_login.png) no-repeat;margin-left:-13px;color:#fff;display:block;text-indent:5px;letter-spacing: 5px; font-size:25px;width:426px; height:78px; line-height:65px;text-align: center;}
+
+/*footer*/
+.footer{font-size:18px;color:#fff;text-align: center}
+
