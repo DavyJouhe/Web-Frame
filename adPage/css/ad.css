@@ -1,0 +1,24 @@
+﻿@charset "utf-8";
+*{margin:0;padding:0;list-style:none;border:0;}
+body{width:100%;height:1080px; margin:0 auto;padding: 0;border:0;}
+
+/* main_image */
+.main_visual{height:100%;border-top:0px;overflow:hidden;position:relative;}
+.main_image{height:100%; width:100%;overflow:hidden; position:relative;}
+.main_image ul{width:100%;height:100%;overflow:hidden;position:absolute;top:0;right:0;}
+.main_image li{float:left;width:100%;height:100%;}
+.main_image li span{display:block;width:100%;height:100%;}
+.main_image li a{display:block;width:100%;height:100%;}
+.main_image li .img_1{background:url('../img/ad/welcome.jpg') center top no-repeat; color:white;font-family:'微软雅体';font-size:50px; font-weight:bold; line-height:1.5em;}
+.main_image li .img_2{background:url('../img/ad/finger.jpg') center top no-repeat; color:white;font-family:'微软雅体';font-size:50px; font-weight:bold; line-height:1.5em;}
+.main_image li .img_3{background:url('../img/ad/piping.jpg') center top no-repeat; color:white;font-family:'微软雅体';font-size:50px; font-weight:bold; line-height:1.5em;}
+.main_image li .img_4{background:url('../img/ad/tec.jpg') center top no-repeat; color:white;font-family:'微软雅体';font-size:50px; font-weight:bold; line-height:1.5em;}
+.main_image li .img_5{background:url('../img/ad/us.jpg') center top no-repeat; color:white;font-family:'微软雅体';font-size:50px; font-weight:bold; line-height:1.5em;}
+
+
+div.flicking_con{position:absolute;top:900px;left:50%;z-index:999;width:300px;height:21px;margin:0 0 0 -50px;}
+div.flicking_con a{float:left;width:21px;height:21px;margin:0;padding:0;background:url('../img/ad/btn_main_img.png') 0 0 no-repeat;display:block;text-indent:-1000px;}
+div.flicking_con a.on{background-position:0 -21px;}
+#btn_prev,#btn_next{z-index:11111;position:absolute;display:block;width:45px!important;height:45px!important;margin-top:800px;display:none;}
+#btn_prev{background:url('../img/ad/l.png') no-repeat left top;left:100px;}
+#btn_next{background:url('../img/ad/r.png') no-repeat right top;right:100px;}
