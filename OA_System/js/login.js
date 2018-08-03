@@ -1,13 +1,11 @@
 /* 
 * @Author: Jouhe
 * @Date:   2018-08-02 17:09:08
-* @Last Modified time: 2018-08-02 17:27:19
+* @Last Modified time: 2018-08-03 09:21:53
 */
 
 var login = {
     init:function(){
-        this.resetWindow();
-        this.bindEvent();
         return this;
     },
     
@@ -33,8 +31,8 @@ var login = {
     },
 
     getCookie:function (name){       // 拿到cookie      
-        var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
-        if(arr=document.cookie.match(reg))
+        var arr,reg = new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+        if(arr = document.cookie.match(reg))
             return unescape(arr[2]);
         else
             return null;
@@ -44,30 +42,15 @@ var login = {
         var exp = new Date();
         // 将时间设置为一个过期时间，就可以删除
         exp.setTime(exp.getTime() - 1);
-        var cval=this.getCookie(name);
-        if(cval!=null)
-            document.cookie= name + "="+cval+";expires="+exp.toGMTString();
-    },
-
-    // 页面自适应
-    resetWindow : function(){
-        $('body').height($(document).height());
-    },
-     
-    bindEvent:function(){
-        var _this = this;
-        // 凸显input输入框
-        $('.inputL').mouseenter(function(){
-            $(this).addClass('login_inputed').removeClass('login_input');
-        }).mouseleave(function () {
-            $(this).addClass('login_input').removeClass('login_inputed');
-        });                
+        var cval = this.getCookie(name);
+        if(cval! = null)
+            document.cookie = name + "="+cval+";expires="+exp.toGMTString();
     },
     
     loginVerify:function(){
         var _this = this;
         $.ajax({
-            url: util.urls.cxf.sysuser.verify,                     
+            url: util.urls.cxf.sysuser.verify,                          // 请求地址          
             type: "POST",
             contentType: "application/json; charset=UTF-8",
             data:JSON.stringify(_this.GetJsonData()),
@@ -79,7 +62,7 @@ var login = {
                 }
             },
             error: function (err) {
-                layer.alert('连接服务器失败！');
+                layer.alert(err);
             }
         });
     },
