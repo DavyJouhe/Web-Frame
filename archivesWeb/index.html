@@ -1,0 +1,305 @@
+<!DOCTYPE  HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if !IE]><!-->
+<html style="height: 100%;">
+    <!--<![endif]-->
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>智慧档案馆安全防护一体化管理系统</title>
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+        <meta content="" name="description" />
+        <meta content="" name="author" />
+        <!-- ================== BEGIN PAGE LEVEL STYLE ================== -->
+        <link href="css/public.css" rel="stylesheet" type="text/css" />
+        <link href="css/style.css?v=12"  rel="stylesheet" type="text/css" />
+        <!-- ================== END PAGE LEVEL STYLE ================== -->
+        
+        <!--====================== BEGIN Jquery JS =========================-->
+        <script type="text/javascript" src="plugin/jquery-1.11.3/jquery.min.js"></script>
+        <script type="text/javascript" src="plugin/layer/layer.js"></script>
+        <script src="js/html5.js"></script> 
+         <script type="text/javascript" src="js/util.js"></script>
+        <!--====================== END Jquery JS ===========================-->
+        <!--====================== BEGIN HTML5 JS =========================-->
+        
+        <!--====================== END HTML5 JS ===========================-->  
+        <script type="text/javascript" src="js/clock.js"></script>
+        <!-- <script type="text/javascript" src="js/index.js"></script> -->
+
+    </head>
+    <body style="overflow: hidden; height:100%">
+        <div class="header clearfix" id="header">
+            <div class="left">
+                <img src="./img/index/top_logo.png"/>
+                <h1>智慧档案馆安全防护一体化管理系统</h1>
+            </div>
+            <div id="clock"></div>
+            <div class="right userInfo">
+                <span class="admin"></span>
+                <i>您好！<font id="account"></font></i>
+                
+                    <span class="quit"></span>
+                    <em id="logout">退出</em>
+                
+            </div>
+        </div>
+        <div class="content_Container clearfix SysBdy" style="height: 100%;" >
+            <div class="menuList left">
+                <div class="subnav">
+                    <a href="./frame/homepage.html?v=101" target="iframe" class="link" id="homeF" style="border-left: 2px solid rgb(42, 148, 222);background: rgb(54, 63, 80);"><i class="icon"><img src="img/index/left_home_selected.png"/></i><span style="color:#2A94DE">系统首页</span></a>
+                </div>
+                <div class="subnav">
+                    <a href="javascript:void(0);" class="menuLink"><i class="icon"><img src="img/index/left_kufang.png"/></i><span>库房管理</span></a>
+                    <ul class="menu" id="menu1" isShow="false">
+                        <li><a href="frame/storeHouse.html?v=55" target="iframe"><span class="pl30">库房管理</span></a></li> 
+                    </ul>
+                </div>
+                <div class="subnav">
+                    <a href="javascript:void(0);" class="menuLink"><i class="icon"><img src="img/index/left_user.png"/></i><span>用户管理</span></a>
+                    <ul class="menu" id="menu2" isShow="false">
+                        <li><a href="frame/user.html?v=11" target="iframe"><span class="pl30">用户管理</span></a></li>
+                        <li><a href="frame/user_device.html?v=71" target="iframe"><span class="pl30">设备用户</span></a></li>
+                        <li><a href="frame/webUer.html?v=11" target="iframe"><span class="pl30">系统用户</span></a></li>
+                    </ul>
+                </div>
+                <div class="subnav">
+                    <a href="javascript:void(0);" class="menuLink"><i class="icon"><img src="img/index/left_kaoqin.png"/></i><span>考勤功能</span></a>
+                    <ul class="menu" id="menu3" isShow="false">
+                        <li><a href="frame/att_device.html?v=25" target="iframe"><span class="pl30">设备管理</span></a></li>
+                        <li><a href="frame/att_time.html?v=11" target="iframe"><span class="pl30">时间管理</span></a></li>
+                        <li><a href="frame/att_userInOut.html?v=45" target="iframe"><span class="pl30">刷卡记录</span></a></li>
+                        <li><a href="frame/att_record.html?v=51" target="iframe"><span class="pl30">考勤记录</span></a></li>
+                        <li><a href="frame/att_statistics.html?v=23" target="iframe"><span class="pl30">考勤统计</span></a></li>
+                    </ul>
+                </div>
+                <div class="subnav">
+                    <a href="javascript:void(0);" class="menuLink"><i class="icon"><img src="img/index/left_menjin.png"/></i><span>库房门禁</span></a>
+                    <ul class="menu" id="menu4" isShow="false">
+                        <li><a href="frame/storage_controller.html?v=65" target="iframe"><span class="pl30">设备管理</span></a></li>
+                        <li><a href="frame/storage_authority.html?v=82" target="iframe"><span class="pl30">权限设置</span></a></li>
+                        <li><a href="frame/storage_record.html?v=191" target="iframe"><span class="pl30">记录查询</span></a></li>
+                    </ul>
+                </div>
+                <div class="subnav">
+                    <a href="javascript:void(0);" class="menuLink"><i class="icon"><img src="img/index/left_huanjing.png"/></i><span>环境监控</span></a>
+                    <ul class="menu" id="menu5" isShow="false">
+                        <li><a href="frame/env_map1.html?v=65" target="iframe"><span class="pl30">电子地图</span></a></li>
+                        <li><a href="frame/env_device1.html?v=51" target="iframe"><span class="pl30">设备管理</span></a></li>
+                        <li><a href="frame/env_Statics.html?v=15" target="iframe"><span class="pl30">数据统计</span></a></li>
+                        <li><a href="frame/env_threshold.html?v=62" target="iframe"><span class="pl30">阈值设置</span></a></li>
+                        <li><a href="frame/env_log.html?v=55" target="iframe"><span class="pl30">报警日志</span></a></li>
+                    </ul>
+                </div>
+                <div class="subnav">
+                    <a href="javascript:void(0);" class="menuLink"><i class="icon"><img src="img/index/left_rizhi.png"/></i><span>红外报警</span></a>
+                    <ul class="menu" id="menu6" isShow="false">
+                        <li><a href="frame/alarm_map1.html?v=76" target="iframe"><span class="pl30">电子地图</span></a></li>
+                        <li><a href="frame/alarm_controller.html?v=72" target="iframe"><span class="pl30">控制器</span></a></li>
+                        <li><a href="frame/alarm_detector.html?v=81" target="iframe"><span class="pl30">检测器</span></a></li>
+                        <li><a href="frame/alarm_time.html?v=92" target="iframe"><span class="pl30">报警时间</span></a></li>
+                        <li><a href="frame/alarm_record.html?v=92" target="iframe"><span class="pl30">报警记录</span></a></li>
+                    </ul>
+                </div>
+                <div class="subnav">
+                    <a href="javascript:void(0);" class="menuLink"><i class="icon"><img src="img/index/left_shipin.png"/></i><span>视频监控</span></a>
+                    <ul class="menu" id="menu7" isShow="false">
+                        <li><a href="frame/video_map1.html?v=45" target="iframe"><span class="pl30">电子地图</span></a></li>
+                        <li><a href="frame/video_device.html?v=65" target="iframe"><span class="pl30">设备管理</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="iframeBox" style="height:100%">
+                <div class="crumb" id="crumb" >
+                    当前位置:<span>首页</span>
+                </div>
+                <div class="iframeContent" style="height:100%">
+                    <iframe src="./frame/homepage.html?v=125" id="myiframe" frameborder="0" name="iframe" marginwidth=0 marginheight=0 width="100%" scrolling="auto"  onload="this.height=index.initFrame()"></iframe>
+                </div>
+                <div class="sysFooter" id="sysFooter">
+                    Intelligent archives system by HIT 2018 ©
+                </div>
+            </div>          
+        </div>
+    </body>
+    <script type="text/javascript">
+        var clock = new Clock();
+        clock.display(document.getElementById("clock"));
+
+        var index ={
+            init:function(){
+      
+                $('#account').text(util.getUrlParam('user'));
+                this.bindEvent();
+                return this;
+            },
+            bindEvent:function(){
+                
+                
+                var _this = this;
+                $(document).on('click','#logout',function(event){
+                   window.event||event ? window.event.cancelBubble = true : event.stopPropagation(); 
+                   $(window).attr('location','index.html');
+                });
+                //点击首页
+                $('#homeF').click(function(){
+                    var twoLayerl=$('.menuLink').size()
+                    for(var j=0; j<twoLayerl; j++){
+                        var _id =$('.menuLink').eq(j).next().attr('id');
+                        $('#'+_id).removeAttr('style');
+                        $('.menuLink').eq(j).find('span').removeAttr('style');
+                        var aLSrc=$('.menuLink').eq(j).find('img').attr('src');
+                        if(aLSrc.indexOf('_selected')>-1){
+                            var newaLSrc=index.deleStr(aLSrc,'_selected');
+                            $('.menuLink').eq(j).find('img').attr('src',newaLSrc);
+                        }
+                    }
+                    $(this).css({'border-left':'2px solid #2A94DE','background':'#363f50'});
+                    $(this).find('span').css('color','#2A94DE');   
+                    var iconSrc=$(this).find('img').attr('src');
+                    if(iconSrc.indexOf('_selected')==-1){
+                        var newiconSrc =_this.insertStr(iconSrc,'_selected');
+                        $(this).find('img').attr('src',newiconSrc);
+                    }
+                    var crumbHTml ='当前位置:<span href="#">首页</span>';
+                    $('#crumb').html(crumbHTml);
+                });
+                // 二级菜单展开点击
+                  var hasClickId=null;
+           //二级菜单展开点击
+           $('.menuLink').on('click',function(){
+             var thisMenuName =$(this).next().attr('id');
+          var thisMenuStyle = document.getElementById(thisMenuName).style;
+                    var twoLayerl=$('.menuLink').size();
+                     var thisMenuName =$(this).next().attr('id');
+                      var isShow=$('#'+thisMenuName).attr('isShow');
+                     // alert(thisMenuName);
+                     var reg=/\d+/g;
+                     var  _idN=thisMenuName.match(reg)-1;
+                   
+                    // alert(_idN);
+                    var parentText =$(this).find('span').text();
+          //初始化一级菜单开始
+          
+           for(var j=0; j<twoLayerl; j++){
+                   var _id =$('.menuLink').eq(j).next().attr('id');
+                       $('#'+_id).removeAttr('style');
+                   if(_idN==j && hasClickId==thisMenuName){
+                         if($('#'+thisMenuName).hasClass('hasBlock')){
+
+                            // $('#'+thisMenuName).attr('isShow','true');
+                             isShow = $('#'+thisMenuName).attr('isShow');
+                         
+                                     $('#'+thisMenuName).css('display','block');
+                                 //    $('#'+thisMenuName).removeClass('hasBlock')
+                         }
+                              
+                    }
+                   
+                   $('.menuLink').eq(j).find('span').removeAttr('style');
+                  var aLSrc=$('.menuLink').eq(j).find('img').attr('src');
+                  if(aLSrc.indexOf('_selected')>-1){
+                    var newaLSrc=index.deleStr(aLSrc,'_selected');
+                    $('.menuLink').eq(j).find('img').attr('src',newaLSrc);
+                  }
+                  
+            }
+            //初始化一级菜单结束
+            //初始化首页样式开始
+              $('#homeF').removeAttr('style');
+              $('#homeF span').removeAttr('style');
+              var imgSrc =$('#homeF img').attr('src');
+            
+              var NewimgSrc=index.deleStr(imgSrc,'_selected');
+    
+              $('#homeF img').attr('src',NewimgSrc);
+              //初始化首页样式结束
+              //展开一级菜单的样式开始
+              var thisSrc=$(this).find('img').attr('src');
+              var newThisSrc=index.insertStr(thisSrc,'_selected');
+              $(this).find('img').attr('src',newThisSrc);
+              $(this).find('span').css('color',' rgb(42, 148, 222)');
+              //展开一级菜单的样式结束
+             
+              // var thisMenuStyle = document.getElementById(thisMenuName).style;
+              if(isShow=='false'){
+                  hasClickId=thisMenuName;
+                 $('#'+thisMenuName).attr('isShow','true');
+                 $('#'+thisMenuName).slideDown('normal');
+                   $('#'+thisMenuName).addClass('hasBlock');  
+                // $('#'+thisMenuName).toggle('normal',function(){
+                   
+                    $('#'+thisMenuName).find('a').css({'background':'#3d485a','border-left':'2px solid #3d485a'});
+                 $('#'+thisMenuName).find('a').find('span').css('color','#fff');
+                 //点击事件
+                 $('#'+thisMenuName).find('a').click(function(){
+                     var ileng = $('#'+thisMenuName).find('a').size();
+                      for(var i=0;i<ileng;i++){
+                                $('#'+thisMenuName).find('a').eq(i).removeAttr('style');
+                                $('#'+thisMenuName).find('a').eq(i).find('span').css('color','#fff');
+                      }
+                      var indexText=$(this).find('span').text();
+                      var crumbHTml ='当前位置:<span href="#">'+parentText+'</span>><span href="#">'+indexText+'</span>';
+                      $('#crumb').html(crumbHTml);
+                          $(this).css({'border-left':'2px solid #2A94DE','background':'#363f50'}).parent('li').siblings().find('a').css('background','#3d485a');
+                          $(this).find('span').css('color','#2A94DE');
+                 });
+                    
+                   
+              
+              }else if(isShow=='true'){
+                  if(hasClickId!=thisMenuName){
+                    //这次点击的和上次此的已经不一样，要记得实时更新hasClickId;
+                    hasClickId=thisMenuName;
+    
+                                     $('#'+thisMenuName).attr('isShow','false');
+                                      $('#'+thisMenuName).slideDown('normal');
+                                      isShow= $('#'+thisMenuName).attr('isShow');
+    
+                  }else{
+                      $('#'+thisMenuName).attr('isShow','false'); 
+                      $('#'+thisMenuName).removeClass('hasBlock'); 
+                        $('#'+thisMenuName).slideUp('normal');
+              
+              }
+                  
+                }
+               })           
+            },
+            // 插入指定位置的指定字符,不具有通用性，只适合替换这里的路径字符串
+            // 说明：str表示原字符串； flg表示要加入的字符串；sn表示位置
+            insertStr:function(str,flg){
+                var newstr="";
+                var strArry = str.split('.');
+                    strArry[0] = strArry[0]+flg;
+                    newstr = strArry.join('.');
+                return newstr;
+            },
+            deleStr:function(str,flg){
+                var newstr="";
+                var strArry = str.split(flg);
+                    newstr =strArry.join('');
+               return newstr;
+            },
+            initFrame:function(){
+                var frameH=$('.content_Container').height()-140
+                 return frameH
+             
+           }
+         
+        }
+        //自适应浏览器窗口大小改变的iframe的布局高度
+      $(window).resize(function(){
+
+         $('#myiframe').load(function(){
+               $(this).height(index.initFrame());
+              });
+           })               
+
+        $(function(){
+            index.init()
+
+        }); 
+    
+    </script>  
+</html>
