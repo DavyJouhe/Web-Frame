@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <div class="header clearfix" id="header">
+            <div class="left">
+                <img src="./img/index/top_logo.png"/>
+                <h1>OA系统模板</h1>
+            </div>
+            <div id="clock"></div>
+            <div class="right userInfo">
+                <span class="admin"></span>
+                <i>您好！<font id="account"></font></i>
+                
+                    <span class="quit"></span>
+                    <em id="logout">退出</em>
+                
+            </div>
+        </div>
+        <div class="content_Container clearfix SysBdy" style="height: 100%;" >
+            <div class="menuList left">
+                <div class="subnav">
+                    <a href="./frame/homepage.html?v=101" target="iframe" class="link" id="homeF" style="border-left: 2px solid rgb(42, 148, 222);background: rgb(54, 63, 80);"><i class="icon"><img src="img/index/left_home_selected.png"/></i><span style="color:#2A94DE">系统首页</span></a>
+                </div>
+                <div class="subnav">
+                    <a href="javascript:void(0);" class="menuLink"><i class="icon"><img src="img/index/left_kufang.png"/></i><span>库房管理</span></a>
+                    <ul class="menu" id="menu1" isShow="false">
+                        <li><a href="frame/storeHouse.html?v=55" target="iframe"><span class="pl30">库房管理</span></a></li> 
+                    </ul>
+                </div>
+                <div class="subnav">
+                    <a href="javascript:void(0);" class="menuLink"><i class="icon"><img src="img/index/left_user.png"/></i><span>用户管理</span></a>
+                    <ul class="menu" id="menu2" isShow="false">
+                        <li><a href="frame/user.html?v=11" target="iframe"><span class="pl30">用户管理</span></a></li>
+                        <li><a href="frame/user_device.html?v=71" target="iframe"><span class="pl30">设备用户</span></a></li>
+                        <li><a href="frame/webUer.html?v=11" target="iframe"><span class="pl30">系统用户</span></a></li>
+                    </ul>
+                </div>
+                <div class="subnav">
+                    <a href="javascript:void(0);" class="menuLink"><i class="icon"><img src="img/index/left_kaoqin.png"/></i><span>考勤功能</span></a>
+                    <ul class="menu" id="menu3" isShow="false">
+                        <li><a href="frame/att_device.html?v=25" target="iframe"><span class="pl30">设备管理</span></a></li>
+                        <li><a href="frame/att_time.html?v=11" target="iframe"><span class="pl30">时间管理</span></a></li>
+                        <li><a href="frame/att_userInOut.html?v=45" target="iframe"><span class="pl30">刷卡记录</span></a></li>
+                        <li><a href="frame/att_record.html?v=51" target="iframe"><span class="pl30">考勤记录</span></a></li>
+                        <li><a href="frame/att_statistics.html?v=23" target="iframe"><span class="pl30">考勤统计</span></a></li>
+                    </ul>
+                </div>
+                <div class="subnav">
+                    <a href="javascript:void(0);" class="menuLink"><i class="icon"><img src="img/index/left_menjin.png"/></i><span>库房门禁</span></a>
+                    <ul class="menu" id="menu4" isShow="false">
+                        <li><a href="frame/storage_controller.html?v=65" target="iframe"><span class="pl30">设备管理</span></a></li>
+                        <li><a href="frame/storage_authority.html?v=82" target="iframe"><span class="pl30">权限设置</span></a></li>
+                        <li><a href="frame/storage_record.html?v=191" target="iframe"><span class="pl30">记录查询</span></a></li>
+                    </ul>
+                </div>
+                <div class="subnav">
+                    <a href="javascript:void(0);" class="menuLink"><i class="icon"><img src="img/index/left_huanjing.png"/></i><span>环境监控</span></a>
+                    <ul class="menu" id="menu5" isShow="false">
+                        <li><a href="frame/env_map1.html?v=65" target="iframe"><span class="pl30">电子地图</span></a></li>
+                        <li><a href="frame/env_device1.html?v=51" target="iframe"><span class="pl30">设备管理</span></a></li>
+                        <li><a href="frame/env_Statics.html?v=15" target="iframe"><span class="pl30">数据统计</span></a></li>
+                        <li><a href="frame/env_threshold.html?v=62" target="iframe"><span class="pl30">阈值设置</span></a></li>
+                        <li><a href="frame/env_log.html?v=55" target="iframe"><span class="pl30">报警日志</span></a></li>
+                    </ul>
+                </div>
+                <div class="subnav">
+                    <a href="javascript:void(0);" class="menuLink"><i class="icon"><img src="img/index/left_rizhi.png"/></i><span>红外报警</span></a>
+                    <ul class="menu" id="menu6" isShow="false">
+                        <li><a href="frame/alarm_map1.html?v=76" target="iframe"><span class="pl30">电子地图</span></a></li>
+                        <li><a href="frame/alarm_controller.html?v=72" target="iframe"><span class="pl30">控制器</span></a></li>
+                        <li><a href="frame/alarm_detector.html?v=81" target="iframe"><span class="pl30">检测器</span></a></li>
+                        <li><a href="frame/alarm_time.html?v=92" target="iframe"><span class="pl30">报警时间</span></a></li>
+                        <li><a href="frame/alarm_record.html?v=92" target="iframe"><span class="pl30">报警记录</span></a></li>
+                    </ul>
+                </div>
+                <div class="subnav">
+                    <a href="javascript:void(0);" class="menuLink"><i class="icon"><img src="img/index/left_shipin.png"/></i><span>视频监控</span></a>
+                    <ul class="menu" id="menu7" isShow="false">
+                        <li><a href="frame/video_map1.html?v=45" target="iframe"><span class="pl30">电子地图</span></a></li>
+                        <li><a href="frame/video_device.html?v=65" target="iframe"><span class="pl30">设备管理</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="iframeBox" style="height:100%">
+                <div class="crumb" id="crumb" >
+                    当前位置:<span>首页</span>
+                </div>
+                <div class="iframeContent" style="height:100%">
+                    <iframe src="./frame/homepage.html?v=125" id="myiframe" frameborder="0" name="iframe" marginwidth=0 marginheight=0 width="100%" scrolling="auto"  onload="this.height=index.initFrame()"></iframe>
+                </div>
+                <div class="sysFooter" id="sysFooter">
+                    Intelligent archives system by HIT 2018 ©
+                </div>
+            </div>          
+        </div>
+    </body>
+</html>
